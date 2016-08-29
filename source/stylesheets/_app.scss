@@ -1,6 +1,7 @@
 // COLORS
 $teal: #2EC4B6;
 $blue: #4D9DE0;
+$dark-blue: #1057AA;
 $red: #DD614A;
 $yellow: #F3DE8A;
 $green: #60D394;
@@ -42,6 +43,10 @@ a {
 	color: $blue;
 }
 
+.u-dark-blue {
+	color: $dark-blue;
+}
+
 .u-green {
 	color: $green;
 }
@@ -51,15 +56,16 @@ a {
 }
 
 .u-pill-btn {
-	font-size: 12px;
+	font-size: 14px;
 	color: #555;
 	text-align:center;
 	display: inline-block;
 	border-radius: 18px;
-	padding: 0 25px;
+	padding: 0 20px;
 	margin: 0 5px;
 	line-height: 36px;
-	font-weight: bold;
+	font-weight: 600;
+	transition: all 0.2s ease-out;
 	&:hover {
 		color: #333;
 	}

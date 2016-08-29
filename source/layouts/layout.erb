@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Perfecto" %></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <%= stylesheet_link_tag "all" %>
@@ -23,10 +23,10 @@
       <div class="container">
         <div class="left-content">
           <a class="nav-link projects-link" href="#">
-            My Projects <i class="fa fa-caret-down"></i>
+            <%= image_tag 'projects-icon.png' %> My Projects <i class="fa fa-caret-down"></i>
           </a>
-          <a class="nav-link" href="#">
-            My Actions
+          <a class="nav-link actions-link" href="#">
+            <%= image_tag 'action-icon.png' %> My Actions
           </a>
         </div>
         <a href="" class="nav-logo">

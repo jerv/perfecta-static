@@ -1,3 +1,89 @@
+// COLORS
+$teal: #2EC4B6;
+$blue: #4D9DE0;
+$red: #DD614A;
+$yellow: #F3DE8A;
+$green: #60D394;
+$orange: #FF9F00;
+
 @import 'vendor/0-dir';
 @import 'modules/0-dir';
 @import 'layouts/0-dir';
+
+body {
+	background-color: #F9F9F9 !important;
+}
+
+img {
+	display: block;
+}
+
+a {
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+	}
+	&.white-link {
+		color: #fff;
+		&:hover, &:active, &:focus {
+			color: #fff;
+		}
+	}
+}
+
+.u-bold {
+	font-weight: bold;
+}
+
+.u-red {
+	color: $red;
+}
+
+.u-blue {
+	color: $blue;
+}
+
+.u-green {
+	color: $green;
+}
+
+.u-orange {
+	color: $orange;
+}
+
+.u-pill-btn {
+	font-size: 12px;
+	color: #555;
+	text-align:center;
+	display: inline-block;
+	border-radius: 18px;
+	padding: 0 25px;
+	margin: 0 5px;
+	line-height: 36px;
+	font-weight: bold;
+	&:hover {
+		color: #333;
+	}
+	&.blue {
+		color: #fff;
+		background-color: $blue;
+		&:hover {
+			color: #fff;
+			background-color: lighten($blue, 10%);
+		}
+	}
+}
+
+.u-relative {
+	position: relative;
+}
+
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+/* close commented backslash hack */

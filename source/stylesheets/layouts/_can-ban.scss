@@ -11,7 +11,6 @@
 		.project-title {
 			font-size: 36px;
 			font-weight: bold;
-			overflow: hidden;
 			display: inline-block;
 			float: left;
 			margin: 0 25px 10px 0;
@@ -117,14 +116,14 @@
 				color: #777;
 			}
 			&.active {
-				background-color: #fff;
+				background-color: #f9f9f9;
 				border-radius: 5px 5px 0 0;
 			}
 		}
 	}
 }
 
-.can-ban-top-bar {
+.kan-ban-top-bar {
 	i {
 		vertical-align: middle;
 		line-height: 36px;
@@ -143,7 +142,7 @@
 	}
 }
 
-.can-ban-top-section {
+.kan-ban-top-section {
 	display: block;
 	border-radius: 3px;
 	background-color: #333;
@@ -191,7 +190,7 @@
 	}
 }
 
-.can-ban-card {
+.kan-ban-card {
 	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 3px 6px 1px rgba(0,0,0,0.1);
@@ -271,7 +270,7 @@
 		}
 	}
 	.due-date {
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: bold;
 		margin: 16px 0 0 0;
 		display: block;
@@ -279,7 +278,7 @@
 		white-space: nowrap;
 		color: #bbb;
 		i {
-			font-size: 20px;
+			font-size: 18px;
 		}
 		span {
 			margin-left: 10px;

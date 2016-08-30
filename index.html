@@ -10,7 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Kan Ban View</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link href="stylesheets/all.css" rel="stylesheet" />
@@ -23,10 +23,10 @@
       <div class="container">
         <div class="left-content">
           <a class="nav-link projects-link" href="#">
-            My Projects <i class="fa fa-caret-down"></i>
+            <img src="images/projects-icon.png" /> My Projects <i class="fa fa-caret-down"></i>
           </a>
-          <a class="nav-link" href="#">
-            My Actions
+          <a class="nav-link actions-link" href="#">
+            <img src="images/action-icon.png" /> My Actions
           </a>
         </div>
         <a href="" class="nav-logo">
@@ -50,23 +50,32 @@
 			<div class="col-xs-12">
 				<div class="group">
 					<div class="title-line">
-						<h1 class="project-title">Project Name <a href=""><i class="fa fa-cog"></i></a></h1>
-						<div class="assigned-users">
-							<a href="">
-								<img src="images/example.jpg" />
-							</a>
-							<a href="">
-								<img src="images/example.jpg" />
-							</a>
-							<a href="">
-								<img src="images/example.jpg" />
-							</a>
-						</div>
+						<h1 class="project-title">Project Name <a href=""><i class="icon-cog"></i></a></h1>
 					</div>
+				</div>
+				<div class="assigned-users">
+					<a href="" class="add-link">
+						<i class="fa fa-plus"></i>
+					</a>
+					<a href="">
+						<img src="images/example3.jpg" />
+						<div class="status online"></div>
+					</a>
+					<a href="">
+						<img src="images/example2.jpg" />
+						<div class="status"></div>
+					</a>
+					<a href="">
+						<img src="images/example.jpg" />
+						<div class="status online"></div>
+					</a>
+					<a href="" class="more-link">
+						<i class="icon-dot-3"></i>
+					</a>
 				</div>
 				<h5 class="project-date">Project Started on May 5th, 2016</h5>
 				<div class="search-bar-container">	
-					<i class="fa fa-search search-icon"></i>
+					<i class="icon-search search-icon"></i>
 					<input type="text" name="" class="search-bar">
 				</div>
 			</div>
@@ -91,12 +100,12 @@
 	</ul>
 </div>
 
-<div class="kan-ban-top-bar group padding-xs">
+<div class="kan-ban-top-bar group padding-sm">
 	<div class="container u-relative">
 		<div class="pull-right">
 			<a href="" class="u-pill-btn blue">Add Action</a>
-			<a href="" class="icon-link"><i class="fa fa-bars"></i></a>
-			<a href="" class="icon-link"><i class="fa fa-filter"></i></a>
+			<a href="" class="icon-link"><i class="icon-chart-line"></i></a>
+			<a href="" class="icon-link"><i class="icon-params"></i></a>
 		</div>
 	</div>
 </div>
@@ -106,7 +115,7 @@
 		<div class="col-xs-12 col-md-3">
 			<div class="kan-ban-top-section assigned">
 				<h4>Assigned</h4>
-				<a href="#" class="white-link" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
 			</div>
 			<article class="kan-ban-card">
 				<div class="group">
@@ -124,10 +133,10 @@
 						</div>
 					</div>
 					<div class="due-date soon">
-						<i class="fa fa-calendar"></i><span>Due in 1 days</span>
+						<i class="icon-calendar"></i><span>Due in 1 days</span>
 					</div>
 				</div>
-				<a href="" class="contextual" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="" class="contextual"><i class="fa fa-ellipsis-v"></i></a>
 				<a href="" class="assignee">
 					<img src="images/example.jpg" />
 				</a>
@@ -136,37 +145,37 @@
 		<div class="col-xs-12 col-md-3">
 			<div class="kan-ban-top-section in-progess">
 				<h4>In Progess</h4>
-				<a href="#" class="white-link" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
 			</div>
 			<article class="kan-ban-card">
 				<div class="group">
 					<div class="name">
 						<span class="card-number">#301</span>
-						<h5>Name this Action</h5>
+						<h5>Name this Action Its a title of a long action name see?</h5>
 					</div>
 					<a href="" class="epic-name"><span>Epic Name:</span> Followed by user story blah and words</a>
 					<div class="row stats">
 						<div class="col-xs-12 col-md-6">
-							Priority: <span class="u-bold u-blue">Low</span>
+							Priority: <span class="u-bold u-dark-blue">Low</span>
 						</div>
 						<div class="col-xs-12 col-md-6">
 							Effort: <span class="u-bold">2 Hours</span>
 						</div>
 					</div>
 					<div class="due-date overdue">
-						<i class="fa fa-calendar"></i><span>Past Due Date</span>
+						<i class="icon-calendar"></i><span>Past Due Date</span>
 					</div>
 				</div>
-				<a href="" class="contextual" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="" class="contextual"><i class="fa fa-ellipsis-v"></i></a>
 				<a href="" class="assignee">
-					<img src="images/example.jpg" />
+					<img src="images/example3.jpg" />
 				</a>
 			</article>
 		</div>
 		<div class="col-xs-12 col-md-3">
 			<div class="kan-ban-top-section review">
 				<h4>Under Review</h4>
-				<a href="#" class="white-link"><i class="fa fa-ellipsis-v"></i></a>
+				<a href="#" class="white-link"><i class="icon-down-open-mini"></i></a>
 			</div>
 			<article class="kan-ban-card past">
 				<div class="group">
@@ -177,9 +186,9 @@
 				</div>
 				<a href="" class="epic-name"><span>Epic Name:</span> Followed by user story blah and words</a>
 				<div class="due-date">
-					<i class="fa fa-calendar"></i><span>Submitted on Time</span>
+					<i class="icon-calendar"></i><span>Submitted on Time</span>
 				</div>
-				<a href="" class="contextual" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="" class="contextual"><i class="fa fa-ellipsis-v"></i></a>
 				<a href="" class="assignee">
 					<img src="images/example.jpg" />
 				</a>
@@ -193,18 +202,18 @@
 				</div>
 				<a href="" class="epic-name"><span>Epic Name:</span> Followed by user story blah and words</a>
 				<div class="due-date">
-					<i class="fa fa-calendar"></i><span>Submitted on Time</span>
+					<i class="icon-calendar"></i><span>Submitted on Time</span>
 				</div>
-				<a href="" class="contextual" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="" class="contextual"><i class="fa fa-ellipsis-v"></i></a>
 				<a href="" class="assignee">
-					<img src="images/example.jpg" />
+					<img src="images/example2.jpg" />
 				</a>
 			</article>
 		</div>
 		<div class="col-xs-12 col-md-3">
 			<div class="kan-ban-top-section completed">
 				<h4>Completed</h4>
-				<a href="#" class="white-link" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
 			</div>
 			<article class="kan-ban-card past">
 				<div class="group">
@@ -215,11 +224,11 @@
 				</div>
 				<a href="" class="epic-name"><span>Epic Name:</span> Followed by user story blah and words</a>
 				<div class="due-date">
-					<i class="fa fa-calendar"></i><span>Submitted on Time</span>
+					<i class="icon-calendar"></i><span>Submitted on Time</span>
 				</div>
-				<a href="" class="contextual" ><i class="fa fa-ellipsis-v"></i></a>
+				<a href="" class="contextual"><i class="fa fa-ellipsis-v"></i></a>
 				<a href="" class="assignee">
-					<img src="images/example.jpg" />
+					<img src="images/example2.jpg" />
 				</a>
 			</article>
 		</div>

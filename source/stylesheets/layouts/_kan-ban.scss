@@ -1,6 +1,6 @@
 .m-heading-area {
 	background-color: #ECECEC;
-	padding: 20px 0 60px 0;
+	padding: 15px 0 50px 0;
 	border-bottom: 1px solid #ddd;
 	.container {
 		position: relative;
@@ -11,15 +11,15 @@
 		width: 100%;
 	}
 	.project-title {
-		font-size: 36px;
+		font-size: 24px;
 		font-weight: bold;
 		display: inline-block;
 		float: left;
 		margin: 0 25px 10px 0;
-		/* setting icon */ a {
+		a.settings {
 			color: #bbb;
 			transition: all 0.2s ease-out;
-			font-size: 24px;
+			font-size: 18px;
 			&:hover {
 				color: #888;
 			}
@@ -35,8 +35,8 @@
 			content: "Assigned Users";
 			display: block;
 			text-transform: uppercase;
-			font-size: 12px;
-			color: #999;
+			font-size: 10px;
+			color: #bbb;
 			font-weight: 700;
 			margin-bottom: 5px;
 		}
@@ -119,14 +119,14 @@
 		font-size: 12px;
 	}
 
-	$search-height: 36px;
+	$search-height: 28px;
 
 	.search-bar-container {
 		width: 100%;
 		max-width: 20%;
 		position: absolute;
 		right: 15px;
-		bottom: -($search-height + 12px);
+		bottom: -36px;
 		.search-icon {
 			content: "\f002";
 			position: absolute;
@@ -145,13 +145,14 @@
 		border-radius: $search-height / 2;
 		line-height: $search-height - 4;
 		height: $search-height;
-		padding: 2px 15px 2px 32px;
+		padding: 2px 15px 2px 25px;
 		border: 1px solid #ccc;
 		outline: none;
 		width: 100%;
 		display: block;
 		transition: all 0.2s ease-out;
 		background-color: rgba(250,250,250,0.5);
+		font-size: 12px;
 		&:active, &:focus {
 			-webkit-appearance: none;
 			border: 1px solid #ccc;
@@ -216,29 +217,49 @@
 	}
 }
 
+.kan-ban-container {
+	
+}
+
+.kan-ban-column {
+	@media (min-width:968px) {
+		width: 25%;
+		display: inline-block;
+		float: left;
+		padding: 0 10px;
+		display:block;
+		&:first-of-type {
+			padding-left: 0;
+		}
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+}
+
 .kan-ban-top-section {
 	display: block;
 	border-radius: 3px;
 	background-color: #333;
 	color: #fff;
-	height: 45px;
+	height: 36px;
 	padding: 0 0 0 15px;
 	position: relative;
 	margin-bottom: 12px;
 	h4 {
 		margin: 0;
-		line-height: 45px;
+		line-height: 36px;
 		display: inline-block;
 		font-weight: 400;
 		width: 80%;
-		font-size: 22px;
+		font-size: 16px;
 	}
 	a {
 		float: right;
 		display: inline-block;
-		line-height: 45px;
+		line-height: 36px;
 		text-align: center;
-		width: 45px; 
+		width: 36px; 
 		font-size: 24px;
 		transition: all 0.2s ease-out;
 		&:hover {
@@ -281,25 +302,56 @@
 	padding: 15px;
 	margin-bottom: 15px;
 	display: block;
+	@media (max-width:768px) {
+		text-align: center;
+		.stats {
+			max-width: 260px;
+			margin: 0 auto;
+		}
+		.due-date {
+			text-align: left;
+		}
+	}
 	&.past {
 		.name, .epic-name, .assignee {
 			opacity: 0.4;
+		}
+	}
+	.textual-dropdown {
+		left: auto;
+		top: 45px;
+		bottom: auto;
+		right: 0;
+		border-radius: 5px;
+		li {
+			&:first-of-type a {
+				border-radius: 5px 5px 0 0;
+			}
 		}
 	}
 	.contextual {
 		position: absolute;
 		top: 0;
 		right: 0;
-		padding: 8px 13px 0 0; 
+		padding: 8px 4px 0 0; 
 		display: inline-block;
 		line-height: 32px;
 		text-align: center;
 		width: 32px; 
-		font-size: 24px;
+		font-size: 18px;
 		transition: all 0.2s ease-out;
 		color: #666;
 		&:hover {
 			color: #333;
+		}
+		.icon-dot-3 {
+			-moz-transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);
+			transform: rotate(90deg);
+			position: relative;
+			display: block;
 		}
 	}
 	.name {
@@ -346,18 +398,32 @@
 	}
 	.stats {
 		font-size: 13px;
-		@media (min-width: 768px) {
-			.col-md-6:first-of-type {
-				padding-right: 5px;
+		display: block;
+		.stats-column {
+			display: block;
+		}
+		.stats-column:last-of-type {
+			margin-top: 5px;
+		}
+		@media (min-width: 480px) {
+			.stats-column {
+				width: 50%;
+				float: left;
+				display: inline-block;
+				padding: 0 10px;
 			}
-			.col-md-6:last-of-type {
-				padding-left: 5px;
+			.stats-column:first-of-type {
+				padding-left: 0;
+			}
+			.stats-column:last-of-type {
+				margin: 0;
+				padding-right: 0;
 			}
 		}
 	}
 	.due-date {
 		font-size: 14px;
-		margin: 28px 0 0 0;
+		margin: 20px 0 0 0;
 		display: block;
 		width: 85%;
 		white-space: nowrap;

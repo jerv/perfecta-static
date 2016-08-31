@@ -23,22 +23,28 @@
       <div class="container">
         <div class="left-content">
           <a class="nav-link projects-link" href="#">
-            <%= image_tag 'projects-icon.png' %> My Projects <i class="fa fa-caret-down"></i>
+            <img src="images/projects-icon.png"> <span> My Projects</span> <i class="fa fa-caret-down"></i>
           </a>
+          <ul class="textual-dropdown show"> <!-- TOGGLE SHOW HERE -->
+            <li><a href="">Other Project</a></li>
+            <li><a href="">Last Project</a></li>
+            <li><a href="" class="primary-action"><i class="fa fa-plus"></i> Add New</a></li>
+          </ul>
           <a class="nav-link actions-link" href="#">
-            <%= image_tag 'action-icon.png' %> My Actions
+            <img src="images/action-icon.png"><span> My Actions</span>
           </a>
         </div>
         <a href="" class="nav-logo">
-          <%= image_tag 'little-logo.png' %>
+          <img src="images/little-logo.png">
+          <img src="images/jelly-logo.png" class="mobile-logo">
         </a>
         <div class="right-content">
           <a class="nav-link notifications-link empty" href="#">
             <i class="fa fa-bell-o"></i>
           </a>
           <a class="nav-link profile-link" href="#">
-            Adam Whitney
-            <%= image_tag 'example.jpg' %>
+            <span>Adam Whitney</span>
+            <img src="images/example.jpg">
           </a>
         </div>
       </div>

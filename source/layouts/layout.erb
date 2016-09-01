@@ -36,9 +36,27 @@
           <img src="images/jelly-logo.png" class="mobile-logo">
         </a>
         <div class="right-content">
-          <a class="nav-link actions-link mdl-button mdl-js-button mdl-js-ripple-effect" href="#">
+          <a id="actionsDropdown" class="nav-link actions-link mdl-button mdl-js-button mdl-js-ripple-effect" href="#">
             <img src="images/action-icon.png"><span> My Actions</span>
           </a>
+          <ul class="mdl-menu actions-dropdown mdl-with-content mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+              for="actionsDropdown">
+            <li>
+              <a href="">
+                This could be an example of a <strong>Notification</strong> Message
+              </a>
+            </li>
+            <li>
+              <a href="">
+                An example of a <strong>Notification</strong> Message
+              </a>
+            </li>
+            <li>
+              <a href="">
+                This is a <strong>Notification</strong> Message
+              </a>
+            </li>
+          </ul>
           <a class="nav-link notifications-link empty mdl-button mdl-js-button mdl-js-ripple-effect" href="#">
             <i class="icon-bell"></i>
           </a>
@@ -94,9 +112,12 @@
           </li>
         </ul>
         <div class="assigned-users">
-          <a href="" class="add-link">
+          <a id="assignedUserAdd" href="" class="add-link">
             <i class="icon-plus"></i>
           </a>
+          <div class="mdl-tooltip" data-mdl-for="assignedUserAdd">
+            Add User to Project
+          </div>
           <a href="">
             <%= image_tag 'example3.jpg' %>
             <div class="status online"></div>
@@ -109,9 +130,12 @@
             <%= image_tag 'example.jpg' %>
             <div class="status online"></div>
           </a>
-          <a href="" class="more-link">
+          <a id="assignedUserOptions" href="" class="more-link">
             <i class="icon-dot-3"></i>
           </a>
+          <div class="mdl-tooltip" data-mdl-for="assignedUserOptions">
+            Manage Users
+          </div>
         </div>
       </div>
     </div>

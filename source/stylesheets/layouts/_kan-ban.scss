@@ -23,9 +23,10 @@
 			min-width: 0;
 		}
 	}
-	a.icon-link {
+	.icon-link {
 		color: #bbb;
 		text-align: center;
+		padding: 0;
 		display: inline-block;
 		&:last-of-type {
 			padding-right: 0;
@@ -66,6 +67,10 @@
 		background-color: #fff;
 		font-size: 12px;
 		width: 100%;
+	}
+	.filters-dropdown {
+		min-width: 240px;
+		padding: 25px;
 	}
 	@media (max-width: 968px) {
 		.u-pull-right {

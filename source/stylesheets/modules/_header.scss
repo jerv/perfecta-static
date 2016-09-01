@@ -187,14 +187,14 @@ nav {
 				display: block;
 				font-weight: 600;
 				text-transform: uppercase;
-				color: #333;
+				color: #777;
 				padding: 0 12px 0 12px;
 				transition: all 0.1s ease-out;
 				i {
 					display: none;
 				}
 				&:hover {
-					color: $blue;
+					color: #333;
 				}
 				&.active {
 					background-color: #f9f9f9;

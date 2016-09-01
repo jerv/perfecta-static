@@ -10,8 +10,7 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Kan Ban View</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <link href="stylesheets/all.css" rel="stylesheet" />
     <script src="javascripts/all.js"></script>
@@ -22,16 +21,14 @@
     <nav>
       <div class="container">
         <div class="left-content">
-          <a class="nav-link projects-link" href="#">
-            <img src="images/projects-icon.png"> <span> My Projects</span> <i class="fa fa-caret-down"></i>
-          </a>
-          <ul class="textual-dropdown show"> <!-- TOGGLE SHOW HERE -->
+          <!-- <ul class="textual-dropdown"> 
             <li><a href="">Other Project</a></li>
             <li><a href="">Last Project</a></li>
             <li><a href="" class="primary-action"><i class="fa fa-plus"></i> Add New</a></li>
-          </ul>
-          <a class="nav-link actions-link" href="#">
-            <img src="images/action-icon.png"><span> My Actions</span>
+          </ul> -->
+          <a class="nav-link profile-link" href="#">
+            <img src="images/example.jpg">
+            <span>Adam Whitney</span>
           </a>
         </div>
         <a href="" class="nav-logo">
@@ -39,16 +36,79 @@
           <img src="images/jelly-logo.png" class="mobile-logo">
         </a>
         <div class="right-content">
-          <a class="nav-link notifications-link empty" href="#">
-            <i class="fa fa-bell-o"></i>
+          <a class="nav-link actions-link" href="#">
+            <img src="images/action-icon.png"><span> My Actions</span>
           </a>
-          <a class="nav-link profile-link" href="#">
-            <span>Adam Whitney</span>
-            <img src="images/example.jpg">
+          <a class="nav-link notifications-link empty" href="#">
+            <i class="icon-bell"></i>
           </a>
         </div>
       </div>
     </nav>
+
+    <div class="m-subnav">
+      <div class="container">
+        <ul class="list-items">
+          <li>
+            <a href="" class="projects-link">
+              <i class="icon-clone"></i> 
+              <span>Launchpad Co </span>
+              <i class="icon-down-open"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-newspaper"></i>
+              <span>Epics</span> 
+            </a>
+          </li>
+          <li>
+            <a href="" class="active">
+              <i class="icon-docs"></i>
+              <span>Kan Ban</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-fog"></i>
+              <span>Backlog</span>              
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-doc"></i>
+              <span>Notes/Docs</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="icon-cog"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <div class="assigned-users">
+          <a href="" class="add-link">
+            <i class="icon-plus"></i>
+          </a>
+          <a href="">
+            <img src="images/example3.jpg" />
+            <div class="status online"></div>
+          </a>
+          <a href="">
+            <img src="images/example2.jpg" />
+            <div class="status"></div>
+          </a>
+          <a href="">
+            <img src="images/example.jpg" />
+            <div class="status online"></div>
+          </a>
+          <a href="" class="more-link">
+            <i class="icon-dot-3"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <div class="m-heading-area">
 	<div class="container">

@@ -348,6 +348,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 3, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+  background-color: #4D9DE0;
+  color: #fff;
+  padding: 0 25px; }
+  /* line 7, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised:hover, .mdl-button--accent.mdl-button--accent.mdl-button--fab:hover {
+    background-color: #63a9e4; }
+  /* line 10, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  .mdl-button--accent.mdl-button--accent.mdl-button--raised .mdl-ripple, .mdl-button--accent.mdl-button--accent.mdl-button--fab .mdl-ripple {
+    background: #fafafa; }
+
+/* line 15, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+.mdl-button {
+  text-transform: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  min-width: 0; }
+
+/* line 22, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+.u-pill-btn {
+  border-radius: 18px;
+  overflow: hidden; }
+  /* line 25, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  .u-pill-btn .mdl-button__ripple-container {
+    border-radius: 18px; }
+
+/* line 30, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+.mdl-menu {
+  padding: 0; }
+
 /* line 10, /home/jerv/work/profecta/source/stylesheets/modules/_spacing.scss */
 [class|="margin"] {
   margin-top: 20px;
@@ -936,28 +967,30 @@ nav {
     padding: 0 12px;
     line-height: 45px;
     font-size: 15px;
-    float: left; }
-    /* line 59, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    float: left;
+    overflow: hidden;
+    height: 45px; }
+    /* line 61, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     nav .nav-link:hover {
       text-decoration: none;
       color: #fff;
       background-color: rgba(250, 250, 250, 0.2); }
-  /* line 65, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 67, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .notifications-link {
     padding: 0 10px;
     font-size: 20px;
     border-left: 1px rgba(250, 250, 250, 0.3) solid;
     border-right: 1px rgba(250, 250, 250, 0.3) solid; }
-    /* line 71, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 73, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     nav .notifications-link.empty i {
       opacity: 0.5; }
-    /* line 75, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 77, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     nav .notifications-link.empty:hover i {
       opacity: 1; }
-  /* line 81, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 83, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .profile-link {
     padding-left: 0; }
-    /* line 83, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 85, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     nav .profile-link img {
       display: inline-block;
       float: left;
@@ -968,39 +1001,53 @@ nav {
       width: 45px; }
 
 @media (max-width: 968px) {
-  /* line 97, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 99, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .nav-link > span {
     display: none; }
-  /* line 100, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 102, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .profile-link {
     margin-left: 55px;
     padding: 0; }
-  /* line 104, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 106, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .notifications-link {
     border-right: none; }
-  /* line 107, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 109, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   nav .nav-logo {
     width: 20px;
     top: 10px;
     left: 50%;
-    margin-left: -6.5px; }
-    /* line 112, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    margin-left: -8.5px; }
+    /* line 114, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     nav .nav-logo img {
       display: none; }
-      /* line 114, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 116, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       nav .nav-logo img.mobile-logo {
         display: inline-block;
         opacity: 0.6; } }
-/* line 127, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+/* line 129, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
 .m-subnav {
   background-color: #f2f2f2;
   height: 45px;
   border-bottom: 1px solid #ddd; }
-  /* line 131, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 133, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  .m-subnav .projects-dropdown {
+    min-width: 230px; }
+  /* line 136, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .container {
     position: relative;
     padding-left: 0; }
-  /* line 135, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 140, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  .m-subnav .mdl-button {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 0; }
+    /* line 144, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    .m-subnav .mdl-button:hover {
+      background: rgba(0, 0, 0, 0.03); }
+    /* line 147, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    .m-subnav .mdl-button .mdl-ripple {
+      background: #fff; }
+  /* line 151, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .list-items {
     display: inline-block;
     margin: 0;
@@ -1008,58 +1055,63 @@ nav {
     list-style-type: none;
     line-height: 45px;
     font-size: 12px; }
-    /* line 142, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-    .m-subnav .list-items li {
+    /* line 158, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    .m-subnav .list-items > li {
       display: inline-block;
-      margin: 0 2px;
+      margin: 0;
       float: left; }
-      /* line 146, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-      .m-subnav .list-items li:first-of-type {
+      /* line 162, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li:first-of-type {
         margin-left: 0; }
-      /* line 149, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-      .m-subnav .list-items li:last-of-type {
+      /* line 165, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li:last-of-type {
         margin-right: 0; }
-      /* line 152, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-      .m-subnav .list-items li a {
+      /* line 168, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li .projects-link {
+        background-color: #fff;
+        color: #2EC4B6;
+        box-shadow: 0 -1px #ddd inset, -1px 0 #ddd inset;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 0;
+        margin-top: -2px;
+        box-sizing: border-box; }
+        /* line 177, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li .projects-link:hover {
+          color: #2EC4B6; }
+        /* line 180, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li .projects-link i {
+          color: #bbb;
+          display: inline-block;
+          font-size: 13px; }
+      /* line 186, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li a {
         display: block;
         font-weight: 600;
         text-transform: uppercase;
         color: #333;
         padding: 0 12px 0 12px;
         transition: all 0.1s ease-out; }
-        /* line 159, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a i {
+        /* line 193, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li a i {
           display: none; }
-        /* line 162, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a.projects-link {
-          background-color: #fff;
-          color: #2EC4B6;
-          box-shadow: 0 -1px #ddd inset, -1px 0 #ddd inset; }
-          /* line 166, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-          .m-subnav .list-items li a.projects-link:hover {
-            color: #2EC4B6; }
-          /* line 169, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-          .m-subnav .list-items li a.projects-link i {
-            color: #bbb;
-            display: inline-block;
-            font-size: 13px; }
-        /* line 175, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a:hover {
+        /* line 196, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li a:hover {
           color: #4D9DE0; }
-        /* line 178, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a.active {
+        /* line 199, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li a.active {
           background-color: #f9f9f9;
           box-shadow: 1px 0 #ddd inset, -1px 0 #ddd inset; }
-          /* line 181, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-          .m-subnav .list-items li a.active i {
+          /* line 202, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+          .m-subnav .list-items > li a.active i {
             color: #FF9F00; }
-  /* line 188, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 209, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .assigned-users {
     display: inline-block;
     float: right;
     direction: inline-block;
     text-align: right; }
-    /* line 193, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 214, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     .m-subnav .assigned-users a {
       display: inline-block;
       margin: 9px 3px;
@@ -1067,19 +1119,19 @@ nav {
       border-radius: 24px;
       transition: all 0.2s ease-out;
       position: relative; }
-      /* line 200, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 221, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a:hover {
         box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
-        /* line 202, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 223, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .assigned-users a:hover img {
           opacity: 0.8; }
-      /* line 206, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 227, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a:first-of-type {
         margin-left: 0; }
-      /* line 209, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 230, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a:last-of-type {
         margin-right: 0; }
-      /* line 212, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 233, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a.add-link {
         display: inline-block;
         border-radius: 50%;
@@ -1091,12 +1143,12 @@ nav {
         background: none;
         box-shadow: 0 0 0 2px #bbb inset;
         font-size: 12px; }
-        /* line 223, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 244, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .assigned-users a.add-link:hover {
           background: #60D394;
           color: #fff;
           box-shadow: 0 0 0 2px #60D394 inset, 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
-      /* line 229, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 250, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a.more-link {
         display: inline-block;
         border-radius: 50%;
@@ -1106,18 +1158,18 @@ nav {
         line-height: 24px;
         text-align: center;
         background-color: #ddd; }
-        /* line 238, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 259, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .assigned-users a.more-link:hover {
           background-color: #4D9DE0;
           color: #fff;
           box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
-      /* line 244, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 265, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a img {
         transition: all 0.2s ease-out;
         border-radius: 50%;
         display: inline-block;
         height: 24px; }
-      /* line 250, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 271, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .assigned-users a .status {
         border-radius: 50%;
         display: block;
@@ -1127,64 +1179,64 @@ nav {
         height: 8px;
         width: 8px;
         background-color: #bbb; }
-        /* line 259, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 280, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .assigned-users a .status.online {
           background-color: #60D394; }
 
 @media (max-width: 968px) {
-  /* line 269, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 290, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .container {
     padding: 0; }
-  /* line 272, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 293, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .list-items {
     display: block;
     width: 100%; }
-    /* line 275, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-    .m-subnav .list-items li {
+    /* line 296, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    .m-subnav .list-items > li {
       width: 20%;
       float: left;
       margin: 0;
       text-align: center; }
-      /* line 281, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-      .m-subnav .list-items li:nth-of-type(4) i {
+      /* line 302, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li:nth-of-type(4) i {
         font-size: 32px; }
-      /* line 285, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-      .m-subnav .list-items li a {
+      /* line 306, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li .projects-link {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        background-color: #29afa3;
+        box-shadow: none;
+        width: 55px;
+        padding: 0;
+        text-align: center;
+        height: 45px;
+        box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset; }
+        /* line 317, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li .projects-link i {
+          color: #fff;
+          font-size: 12px; }
+        /* line 321, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li .projects-link span {
+          display: none; }
+      /* line 325, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      .m-subnav .list-items > li a {
         height: 45px; }
-        /* line 287, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a i {
+        /* line 327, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li a i {
           display: inline-block;
           font-size: 21px; }
-        /* line 291, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a span {
+        /* line 331, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        .m-subnav .list-items > li a span {
           display: none; }
-        /* line 294, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-        .m-subnav .list-items li a.projects-link {
-          position: absolute;
-          top: -45px;
-          left: 0;
-          background-color: #29afa3;
-          box-shadow: none;
-          width: 55px;
-          padding: 0;
-          text-align: center;
-          height: 45px;
-          box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset; }
-          /* line 305, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-          .m-subnav .list-items li a.projects-link i {
-            color: #fff;
-            font-size: 12px; }
-          /* line 309, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
-          .m-subnav .list-items li a.projects-link span {
-            display: none; }
-  /* line 316, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 337, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .assigned-users {
     display: none; } }
 @media (max-width: 768px) {
-  /* line 324, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 345, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .list-items {
     font-size: 10px; }
-    /* line 327, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 348, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     .m-subnav .list-items li a {
       white-space: nowrap; } }
 /* line 2, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
@@ -1207,24 +1259,28 @@ nav {
 /* line 19, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .m-toolbar .icon-actions {
   display: inline-block; }
-/* line 22, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 21, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  .m-toolbar .icon-actions a {
+    padding: 0;
+    min-width: 0; }
+/* line 26, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .m-toolbar a.icon-link {
   color: #bbb;
   text-align: center;
   display: inline-block; }
-  /* line 26, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 30, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar a.icon-link:last-of-type {
     padding-right: 0; }
-  /* line 29, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 33, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar a.icon-link:hover {
     color: #777; }
-/* line 35, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+/* line 39, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .m-toolbar .search-bar-container {
   display: inline-block;
   position: relative;
   width: 100%;
   max-width: 240px; }
-  /* line 40, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 44, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .search-bar-container .search-icon {
     content: "\f002";
     position: absolute;
@@ -1236,7 +1292,7 @@ nav {
     width: 25px;
     line-height: 36px;
     text-align: center; }
-/* line 53, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+/* line 57, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .m-toolbar .search-bar {
   border-radius: 18px;
   line-height: 32px;
@@ -1250,48 +1306,48 @@ nav {
   font-size: 12px;
   width: 100%; }
 @media (max-width: 968px) {
-  /* line 67, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 71, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .u-pull-right {
     float: left;
     text-align: left; }
-    /* line 70, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 74, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .m-toolbar .u-pull-right .u-pill-btn {
       margin: 0; }
-  /* line 74, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 78, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .u-pull-left {
     float: right;
     text-align: right; } }
 @media (max-width: 740px) {
-  /* line 80, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 84, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .u-pull-right {
     width: 0%;
     z-index: 2;
     position: relative; }
-  /* line 85, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 89, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .u-pull-left {
     width: 100%; }
-  /* line 88, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 92, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .u-pill-btn {
     width: 100%;
     display: block;
     width: 36px;
     text-align: center;
-    padding: 0; }
-    /* line 94, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    padding: 0 !important; }
+    /* line 98, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .m-toolbar .u-pill-btn i {
       display: inline-block; }
-    /* line 97, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 101, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .m-toolbar .u-pill-btn span {
       display: none; }
-  /* line 101, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 105, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .search-bar-container {
     max-width: none;
     padding-left: 45px;
     padding-right: 80px; }
-    /* line 105, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 109, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .m-toolbar .search-bar-container .search-icon {
       left: 52px; }
-  /* line 109, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 113, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .m-toolbar .icon-actions {
     position: absolute;
     right: 10px;
@@ -1302,21 +1358,21 @@ nav {
     padding: 15px 0; } }
 
 @media (min-width: 968px) {
-  /* line 120, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 124, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-column {
     width: 25%;
     display: inline-block;
     float: left;
     padding: 0 10px;
     display: block; }
-    /* line 127, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 131, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-column:first-of-type {
       padding-left: 0; }
-    /* line 130, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 134, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-column:last-of-type {
       padding-right: 0; } }
 
-/* line 136, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+/* line 140, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .kan-ban-top-section {
   display: block;
   border-radius: 3px;
@@ -1326,7 +1382,7 @@ nav {
   padding: 0 0 0 15px;
   position: relative;
   margin-bottom: 12px; }
-  /* line 145, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 149, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-top-section h4 {
     margin: 0;
     line-height: 40px;
@@ -1334,46 +1390,51 @@ nav {
     font-weight: 300;
     width: 80%;
     font-size: 18px; }
-  /* line 153, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
-  .kan-ban-top-section a {
+  /* line 157, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  .kan-ban-top-section button {
     float: right;
     display: inline-block;
-    line-height: 36px;
+    line-height: 40px;
     text-align: center;
-    width: 36px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    min-width: 0;
     font-size: 24px;
-    transition: all 0.2s ease-out; }
-    /* line 161, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
-    .kan-ban-top-section a:hover {
+    transition: all 0.2s ease-out;
+    color: #fff; }
+    /* line 169, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    .kan-ban-top-section button:hover {
+      color: #fff;
       background-color: rgba(250, 250, 250, 0.2); }
-  /* line 165, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 174, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-top-section.assigned {
     background-color: #4D9DE0; }
-  /* line 168, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 177, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-top-section.in-progess {
     background-color: #DD614A; }
-  /* line 171, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 180, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-top-section.review {
     background-color: #F3DE8A;
     color: #333; }
-    /* line 174, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 183, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-top-section.review a {
       color: #333; }
-      /* line 176, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 185, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-top-section.review a:hover {
         color: #333; }
-  /* line 181, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 190, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-top-section.completed {
     background-color: #60D394;
     color: #333; }
-    /* line 184, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 193, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-top-section.completed a {
       color: #333; }
-      /* line 186, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 195, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-top-section.completed a:hover {
         color: #333; }
 
-/* line 193, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+/* line 202, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .kan-ban-card {
   position: relative;
   border-radius: 5px;
@@ -1383,34 +1444,34 @@ nav {
   margin-bottom: 15px;
   display: block; }
   @media (max-width: 768px) {
-    /* line 193, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 202, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card {
       text-align: center; }
-      /* line 203, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 212, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-card .stats {
         max-width: 260px;
         margin: 0 auto; }
-      /* line 207, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 216, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-card .due-date {
         text-align: left; } }
-  /* line 212, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 221, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card.past .name, .kan-ban-card.past .epic-name, .kan-ban-card.past .assignee {
     opacity: 0.4; }
-  /* line 216, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 225, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .textual-dropdown {
     left: auto;
     top: 45px;
     bottom: auto;
     right: 0;
     border-radius: 5px; }
-    /* line 223, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 232, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .textual-dropdown li:first-of-type a {
       border-radius: 5px 5px 0 0; }
-  /* line 228, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 237, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .contextual {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 5px;
     padding: 8px 4px 0 0;
     display: inline-block;
     line-height: 32px;
@@ -1419,10 +1480,10 @@ nav {
     font-size: 18px;
     transition: all 0.2s ease-out;
     color: #666; }
-    /* line 240, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 249, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .contextual:hover {
       color: #333; }
-    /* line 243, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 252, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .contextual .icon-dot-3 {
       -moz-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
@@ -1431,12 +1492,12 @@ nav {
       transform: rotate(90deg);
       position: relative;
       display: block; }
-  /* line 253, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 262, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .name {
     width: 100%;
     padding-right: 24px;
     vertical-align: middle; }
-    /* line 257, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 266, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .name h5 {
       margin: 0;
       font-size: 13px;
@@ -1444,7 +1505,7 @@ nav {
       line-height: 1.2;
       display: inline;
       line-height: 2; }
-    /* line 265, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 274, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .name .card-number {
       display: inline;
       border-radius: 3px;
@@ -1456,7 +1517,7 @@ nav {
       margin-right: 5px;
       line-height: 2.1;
       width: auto; }
-  /* line 278, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 287, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .epic-name {
     display: block;
     color: #4D9DE0;
@@ -1467,37 +1528,37 @@ nav {
     width: 100%;
     font-size: 12px;
     margin: 8px 0; }
-    /* line 288, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 297, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .epic-name span {
       font-weight: bold; }
-    /* line 291, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 300, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .epic-name:hover {
       color: #4D9DE0; }
-  /* line 295, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 304, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .stats {
     font-size: 13px;
     display: block; }
-    /* line 298, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 307, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .stats .stats-column {
       display: block; }
-    /* line 301, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 310, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .stats .stats-column:last-of-type {
       margin-top: 5px; }
     @media (min-width: 480px) {
-      /* line 305, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 314, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-card .stats .stats-column {
         width: 50%;
         float: left;
         display: inline-block;
         padding: 0 10px; }
-      /* line 311, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 320, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-card .stats .stats-column:first-of-type {
         padding-left: 0; }
-      /* line 314, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+      /* line 323, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
       .kan-ban-card .stats .stats-column:last-of-type {
         margin: 0;
         padding-right: 0; } }
-  /* line 320, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 329, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .due-date {
     font-size: 14px;
     margin: 20px 0 0 0;
@@ -1506,22 +1567,22 @@ nav {
     white-space: nowrap;
     color: #bbb;
     font-weight: 400; }
-    /* line 328, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 337, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .due-date i {
       font-size: 18px; }
-    /* line 331, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 340, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .due-date span {
       margin-left: 5px;
       display: inline-block; }
-    /* line 335, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 344, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .due-date.soon {
       color: #FF9F00;
       font-weight: 600; }
-    /* line 339, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 348, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .due-date.overdue {
       color: #DD614A;
       font-weight: 600; }
-  /* line 344, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+  /* line 353, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
   .kan-ban-card .assignee {
     position: absolute;
     width: 24px;
@@ -1530,10 +1591,10 @@ nav {
     right: 12px;
     bottom: 12px;
     overflow: hidden; }
-    /* line 352, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 361, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .assignee:hover {
       opacity: 0.8; }
-    /* line 355, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
+    /* line 364, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
     .kan-ban-card .assignee img {
       width: 100%; }
 
@@ -1579,123 +1640,42 @@ a {
   max-width: 1500px; }
 
 /* line 55, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-.dropdown-container {
-  position: relative;
-  width: auto; }
-
-/* line 60, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-.textual-dropdown {
-  list-style-type: none;
-  display: block;
-  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
-  margin: 0;
-  padding: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.2s ease-out;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  max-width: 167px;
-  z-index: 9999;
-  background-color: #fff;
-  border-radius: 5px; }
-  /* line 77, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-  .textual-dropdown.show {
-    visibility: visible;
-    opacity: 1; }
-  /* line 81, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-  .textual-dropdown li {
-    display: block;
-    margin: 0; }
-    /* line 84, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-    .textual-dropdown li:last-of-type a {
-      border-radius: 0 0 3px 3px; }
-  /* line 88, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-  .textual-dropdown a {
-    display: block;
-    background-color: #fff;
-    color: #777;
-    font-size: 12px;
-    padding: 10px 15px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: hidden; }
-    /* line 97, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-    .textual-dropdown a:hover {
-      color: #333;
-      background-color: #f5f5f5; }
-    /* line 101, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-    .textual-dropdown a.primary-action {
-      color: #4D9DE0; }
-      /* line 103, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-      .textual-dropdown a.primary-action:hover {
-        color: #4D9DE0; }
-
-/* line 110, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-bold {
   font-weight: bold; }
 
-/* line 114, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 59, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-red {
   color: #DD614A; }
 
-/* line 118, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 63, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-blue {
   color: #4D9DE0; }
 
-/* line 122, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 67, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-dark-blue {
   color: #1057AA; }
 
-/* line 126, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 71, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-green {
   color: #60D394; }
 
-/* line 130, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 75, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-orange {
   color: #FF9F00; }
 
-/* line 134, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-.u-pill-btn {
-  font-size: 14px;
-  color: #555;
-  text-align: center;
-  display: inline-block;
-  border-radius: 18px;
-  padding: 0 20px;
-  margin: 0 5px;
-  line-height: 36px;
-  font-weight: 600;
-  transition: all 0.2s ease-out;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
-  /* line 146, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-  .u-pill-btn:hover {
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); }
-  /* line 150, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-  .u-pill-btn.blue {
-    color: #fff;
-    background-color: #4D9DE0; }
-    /* line 153, /home/jerv/work/profecta/source/stylesheets/_app.scss */
-    .u-pill-btn.blue:hover {
-      color: #fff;
-      background-color: #78b5e8; }
-
-/* line 160, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 79, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-pull-left {
   float: left; }
 
-/* line 164, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 83, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-pull-right {
   float: right; }
 
-/* line 168, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 87, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .u-relative {
   position: relative; }
 
-/* line 172, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 91, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 .group:after {
   visibility: hidden;
   display: block;
@@ -1703,12 +1683,12 @@ a {
   clear: both;
   height: 0; }
 
-/* line 179, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 98, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 * html .group {
   zoom: 1; }
 
 /* IE6 */
-/* line 180, /home/jerv/work/profecta/source/stylesheets/_app.scss */
+/* line 99, /home/jerv/work/profecta/source/stylesheets/_app.scss */
 *:first-child + html .group {
   zoom: 1; }
 

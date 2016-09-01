@@ -10,9 +10,14 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Kan Ban View</title>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue-amber.min.css" /> 
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <link href="stylesheets/all.css" rel="stylesheet" />
+
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <script src="javascripts/all.js"></script>
   </head>
 
@@ -21,12 +26,7 @@
     <nav>
       <div class="container">
         <div class="left-content">
-          <!-- <ul class="textual-dropdown"> 
-            <li><a href="">Other Project</a></li>
-            <li><a href="">Last Project</a></li>
-            <li><a href="" class="primary-action"><i class="fa fa-plus"></i> Add New</a></li>
-          </ul> -->
-          <a class="nav-link profile-link" href="#">
+          <a class="nav-link profile-link mdl-js-button mdl-js-ripple-effect" href="#">
             <img src="images/example.jpg">
             <span>Adam Whitney</span>
           </a>
@@ -36,10 +36,10 @@
           <img src="images/jelly-logo.png" class="mobile-logo">
         </a>
         <div class="right-content">
-          <a class="nav-link actions-link" href="#">
+          <a class="nav-link actions-link mdl-button mdl-js-button mdl-js-ripple-effect" href="#">
             <img src="images/action-icon.png"><span> My Actions</span>
           </a>
-          <a class="nav-link notifications-link empty" href="#">
+          <a class="nav-link notifications-link empty mdl-button mdl-js-button mdl-js-ripple-effect" href="#">
             <i class="icon-bell"></i>
           </a>
         </div>
@@ -50,38 +50,44 @@
       <div class="container">
         <ul class="list-items">
           <li>
-            <a href="" class="projects-link">
+            <button id="project-select" href="" class="projects-link mdl-button mdl-js-button mdl-js-ripple-effect">
               <i class="icon-clone"></i> 
               <span>Launchpad Co </span>
               <i class="icon-down-open"></i>
-            </a>
+            </button>
+            <ul class="projects-dropdown mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                for="project-select">
+              <li class="mdl-menu__item">Other Project Name</li>
+              <li class="mdl-menu__item">Last Project</li>
+              <li class="mdl-menu__item"><i class="icon-plus"></i> Add New</li>
+            </ul>
           </li>
           <li>
-            <a href="">
+            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect">
               <i class="icon-newspaper"></i>
               <span>Epics</span> 
             </a>
           </li>
           <li>
-            <a href="" class="active">
+            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect active">
               <i class="icon-docs"></i>
               <span>Kan Ban</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect">
               <i class="icon-fog"></i>
               <span>Backlog</span>              
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect">
               <i class="icon-doc"></i>
               <span>Notes/Docs</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect">
               <i class="icon-cog"></i>
               <span>Settings</span>
             </a>
@@ -118,12 +124,12 @@
 				<input type="text" name="" class="search-bar">
 			</div>
 			<div class="icon-actions">
-				<a href="" class="icon-link"><i class="icon-chart-line"></i></a>
-				<a href="" class="icon-link"><i class="icon-params"></i></a>
+				<a href="" class="icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-chart-line"></i></a>
+				<a href="" class="icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-params"></i></a>
 			</div>
 		</div>
 		<div class="u-pull-right">
-			<a href="" class="u-pill-btn blue"><i class="icon-plus"></i><span>Add Action</span></a>
+			<a href="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent u-pill-btn"><i class="icon-plus"></i><span>Add Action</span></a>
 		</div>
 	</div>
 </div>
@@ -134,7 +140,16 @@
 			<div class="group">
 				<div class="kan-ban-top-section assigned">
 					<h4>Assigned</h4>
-					<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
+					<button id="demo-assigned"
+					        class="mdl-button mdl-js-button">
+					  <i class="icon-down-open-mini"></i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="demo-assigned">
+					  <li class="mdl-menu__item">Sort by Effort</li>
+					  <li class="mdl-menu__item">Sort by Date</li>
+					  <li class="mdl-menu__item">Sort by Priorty</li>
+					</ul>
 				</div>
 				<article class="kan-ban-card">
 					<div class="group">
@@ -157,11 +172,17 @@
 							<i class="icon-calendar"></i><span>Due in 1 days</span>
 						</div>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
-					<ul class="textual-dropdown">
-					  <li><a href="">Action</a></li>
-					  <li><a href="">Other Action</a></li>
-					  <li><a href="" class="primary-action"><i class="icon-plus"></i> Primary Action</a></li>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-1"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-1">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
 					</ul>
 					<a href="" class="assignee">
 						<img src="images/example.jpg" />
@@ -173,7 +194,16 @@
 			<div class="group">
 				<div class="kan-ban-top-section in-progess">
 					<h4>In Progess</h4>
-					<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
+					<button id="demo-progress"
+					        class="mdl-button mdl-js-button">
+					  <i class="icon-down-open-mini"></i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="demo-progress">
+					  <li class="mdl-menu__item">Sort by Effort</li>
+					  <li class="mdl-menu__item">Sort by Date</li>
+					  <li class="mdl-menu__item">Sort by Priorty</li>
+					</ul>
 				</div>
 				<article class="kan-ban-card">
 					<div class="group">
@@ -196,11 +226,17 @@
 							<i class="icon-calendar"></i><span>Past Due Date</span>
 						</div>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
-					<ul class="textual-dropdown">
-					  <li><a href="">Action</a></li>
-					  <li><a href="">Other Action</a></li>
-					  <li><a href="" class="primary-action"><i class="icon-plus"></i> Primary Action</a></li>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-2"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-2">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
 					</ul>
 					<a href="" class="assignee">
 						<img src="images/example3.jpg" />
@@ -227,7 +263,18 @@
 							<i class="icon-calendar"></i><span>Past Due Date</span>
 						</div>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-3"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-3">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
+					</ul>
 					<a href="" class="assignee">
 						<img src="images/example3.jpg" />
 					</a>
@@ -238,7 +285,16 @@
 			<div class="group">
 				<div class="kan-ban-top-section review">
 					<h4>Under Review</h4>
-					<a href="#" class="white-link"><i class="icon-down-open-mini"></i></a>
+					<button id="demo-review"
+					        class="mdl-button mdl-js-button">
+					  <i class="icon-down-open-mini"></i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="demo-review">
+					  <li class="mdl-menu__item">Sort by Effort</li>
+					  <li class="mdl-menu__item">Sort by Date</li>
+					  <li class="mdl-menu__item">Sort by Priorty</li>
+					</ul>
 				</div>
 				<article class="kan-ban-card past">
 					<div class="group">
@@ -251,7 +307,18 @@
 					<div class="due-date">
 						<i class="icon-calendar"></i><span>Submitted on Time</span>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-4"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-4">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
+					</ul>
 					<a href="" class="assignee">
 						<img src="images/example.jpg" />
 					</a>
@@ -267,7 +334,18 @@
 					<div class="due-date">
 						<i class="icon-calendar"></i><span>Submitted on Time</span>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-5"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-5">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
+					</ul>
 					<a href="" class="assignee">
 						<img src="images/example2.jpg" />
 					</a>
@@ -278,7 +356,16 @@
 			<div class="group">
 				<div class="kan-ban-top-section completed">
 					<h4>Completed</h4>
-					<a href="#" class="white-link" ><i class="icon-down-open-mini"></i></a>
+					<button id="demo-complete"
+					        class="mdl-button mdl-js-button">
+					  <i class="icon-down-open-mini"></i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="demo-complete">
+					  <li class="mdl-menu__item">Sort by Effort</li>
+					  <li class="mdl-menu__item">Sort by Date</li>
+					  <li class="mdl-menu__item">Sort by Priorty</li>
+					</ul>
 				</div>
 				<article class="kan-ban-card past">
 					<div class="group">
@@ -291,7 +378,18 @@
 					<div class="due-date">
 						<i class="icon-calendar"></i><span>Submitted on Time</span>
 					</div>
-					<a href="" class="contextual"><i class="icon-dot-3"></i></a>
+					<!-- Right aligned menu below button -->
+					<button id="contextual-6"
+					        class="contextual mdl-button mdl-js-button mdl-button--icon">
+					  <i class="material-icons">more_vert</i>
+					</button>
+					<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+					    for="contextual-6">
+					  <li class="mdl-menu__item">Some Action</li>
+					  <li class="mdl-menu__item">Another Action</li>
+					  <li disabled class="mdl-menu__item">Disabled Action</li>
+					  <li class="mdl-menu__item">Yet Another Action</li>
+					</ul>
 					<a href="" class="assignee">
 						<img src="images/example2.jpg" />
 					</a>

@@ -39,17 +39,61 @@
 	min-width: 420px;
 	padding: 0;
 	li {
-		border-bottom: 1px solid #eee;
+		&:first-of-type {
+			a {
+				padding:10px 10px 9px 10px;
+			}
+		}
 		&:last-of-type {
-			border-bottom: none;
+			a {
+				border-bottom: none;
+			}
 		}
 	}
 	a {
 		color: #333;
 		display: block;
-		padding: 8px 10px;
+		padding: 10px;
+		border-top: 1px solid #eee;
+		font-size: 12px;
+		i {
+			font-size: 12px;
+			line-height: 1;
+		}
 		&:hover {
+			background-color: #f6f6f6;
+		}
+		&.clear-link {
+			font-weight: bold;
+			font-size: 14px;
+			transition: all 0.2s ease-out;
 			color: $blue;
+			height: 45px;
+			i {
+				font-size: 14px;
+			}
+			&:hover {
+				padding: 10px 10px 9px 15px;
+			}
+		}
+		&.view-link {
+			background-color: $teal;
+			font-weight: bold;
+			border: none;
+			font-size: 14px;
+			transition: all 0.2s ease-out;
+			color: #fff;
+			height: 45px;
+			i {
+				font-size: 14px;
+			}
+			&:hover {
+				color: #fff;
+				padding: 10px 10px 10px 15px;
+			}
+		}
+		.u-blue {
+			font-weight: bold;
 		}
 	}
 }

@@ -2,6 +2,8 @@
 title: Kan Ban View
 ---
 
+<!-- TOP TOOL BAR WITH SEARCH AND ICONS -->
+
 <div class="m-toolbar group padding-xs">
 	<div class="container u-relative">
 		<div class="u-pull-left">
@@ -10,10 +12,38 @@ title: Kan Ban View
 				<input type="text" name="" class="search-bar">
 			</div>
 			<div class="icon-actions">
-				<button id="tt-actions" href="" class="icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-chart-line"></i></button>
+				<button id="tt-actions" href="" class="action-icon icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-chart-line"></i></button>
 				<div class="mdl-tooltip" data-mdl-for="tt-actions">
 					Actions
 				</div>
+				<ul class="mdl-menu actions-dropdown mdl-with-content mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+				    for="tt-actions">
+				  <li>
+				    <a href="" class="clear-link">
+				      <i class="icon-ok"></i> Clear All
+				    </a>
+				  </li>
+				  <li>
+				    <a href="">
+				      This could be an example of a <strong>Action</strong> Message.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="">
+				      An example of a <strong>Action</strong> Text.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="">
+				      This is a <strong>Action</strong> Message.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="" class="view-link">
+				      <i class="icon-menu"></i> View All Actions
+				    </a>
+				  </li>
+				</ul>
 				<button id="tt-filters" href="" class="icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-params"></i></button>
 				<div class="mdl-tooltip" data-mdl-for="tt-filters">
 					Filters
@@ -63,6 +93,8 @@ title: Kan Ban View
 		</div>
 	</div>
 </div>
+
+<!-- START OF KAN BAN CONTENT -->
 
 <div class="container kan-ban-container margin-sm clear-top">
 	<div class="group">

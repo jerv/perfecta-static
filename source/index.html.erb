@@ -7,48 +7,19 @@ title: Kan Ban View
 <div class="m-toolbar group padding-xs">
 	<div class="container u-relative">
 		<div class="u-pull-left">
+			<a href="" class="add-action-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"><i class="icon-plus"></i><span>Add Action</span></a>
+		</div>
+		<div class="u-pull-right">
 			<div class="search-bar-container">	
 				<i class="icon-search search-icon"></i>
 				<input type="text" name="" class="search-bar">
 			</div>
 			<div class="icon-actions">
-				<button id="tt-actions" href="" class="action-icon icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-chart-line"></i></button>
-				<div class="mdl-tooltip" data-mdl-for="tt-actions">
-					Actions
-				</div>
-				<ul class="mdl-menu actions-dropdown mdl-with-content mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-				    for="tt-actions">
-				  <li>
-				    <a href="" class="clear-link">
-				      <i class="icon-ok"></i> Clear All
-				    </a>
-				  </li>
-				  <li>
-				    <a href="">
-				      This could be an example of a <strong>Action</strong> Message.
-				    </a>
-				  </li>
-				  <li>
-				    <a href="">
-				      An example of a <strong>Action</strong> Text.
-				    </a>
-				  </li>
-				  <li>
-				    <a href="">
-				      This is a <strong>Action</strong> Message.
-				    </a>
-				  </li>
-				  <li>
-				    <a href="" class="view-link">
-				      <i class="icon-menu"></i> View All Actions
-				    </a>
-				  </li>
-				</ul>
 				<button id="tt-filters" href="" class="icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-params"></i></button>
 				<div class="mdl-tooltip" data-mdl-for="tt-filters">
 					Filters
 				</div>
-				<ul class="mdl-menu filters-dropdown mdl-with-content mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+				<ul class="mdl-menu filters-dropdown mdl-with-content mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
 				    for="tt-filters">
 			    <label class="clear-top margin-xs u-label"><strong>Owner</strong></label>
 			  	<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
@@ -86,10 +57,34 @@ title: Kan Ban View
 			  	  <span class="mdl-checkbox__label">Low</span>
 			  	</label>
 				</ul>
+				<button id="tt-activity" href="" class="action-icon icon-link mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-chart-line"></i></button>
+				<div class="mdl-tooltip" data-mdl-for="tt-activity">
+					Activity
+				</div>
+				<ul class="mdl-menu actions-dropdown mdl-with-content mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				    for="tt-activity">
+				  <li>
+				    <a href="">
+				      This could be an example of an <strong>Activity</strong> Message.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="">
+				      An example of an <strong>Activity</strong> Text.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="">
+				      This is an <strong>Activity</strong> Message.
+				    </a>
+				  </li>
+				  <li>
+				    <a href="" class="view-link">
+				      <i class="icon-chart-line"></i> View Activity
+				    </a>
+				  </li>
+				</ul>
 			</div>
-		</div>
-		<div class="u-pull-right">
-			<a href="" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent u-pill-btn"><i class="icon-plus"></i><span>Add Action</span></a>
 		</div>
 	</div>
 </div>
@@ -160,8 +155,8 @@ title: Kan Ban View
 		</div>
 		<div class="kan-ban-column">
 			<div class="group">
-				<div class="kan-ban-top-section in-progess">
-					<h4>In Progess</h4>
+				<div class="kan-ban-top-section in-progress">
+					<h4>In Progress</h4>
 					<button id="column-progress"
 					        class="mdl-button mdl-js-button">
 					  <i class="icon-down-open-mini"></i>

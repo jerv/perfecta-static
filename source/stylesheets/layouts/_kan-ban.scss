@@ -8,8 +8,30 @@
 			margin-right: 0;
 		}
 	}
-	.u-pill-btn i {
-		display: none;
+	.add-action-button  {
+		padding: 0 10px 0 5px; 
+		vertical-align: middle;
+		background-color: #fff;
+		color: $teal;
+		span {
+			color: #333;
+		}
+		&:hover {
+			background-color: $teal;
+			color: #fff;
+			span {
+				color: #fff;
+			}
+		}
+		i {
+			font-size: 22px;
+			display: inline-block;
+			line-height: 36px;
+			padding-bottom: 5px;
+			width: auto;
+			box-sizing: border-box;
+			transition: 0.3 all ease-out;
+		}
 	}
 	i {
 		vertical-align: middle;
@@ -41,7 +63,7 @@
 		display: inline-block;
 		position: relative;
 		width: 100%;
-		max-width: 240px;
+		max-width: 225px;
 		.search-icon {
 			content: "\f002";
 			position: absolute;
@@ -71,35 +93,30 @@
 	.filters-dropdown {
 		min-width: 240px;
 		padding: 25px;
+		text-align: left;
 	}
 	@media (max-width: 968px) {
-		.u-pull-right {
-			float: left;
-			text-align: left;
-			.u-pill-btn {
-				margin: 0;
-			}
-		}
-		.u-pull-left {
-			float: right;
-			text-align: right; 
-		}
+		
+
 	}
 	@media (max-width: 740px) {
 		.u-pull-right {
-			width: 0%;
+			width: 100%;
 			z-index: 2;
 			position: relative;
 		}
 		.u-pull-left {
-			width: 100%;
+			width: 0%;
 		}
-		.u-pill-btn {
+		.add-action-button  {
 			width: 100%;
 			display: block;
 			width: 36px;
 			text-align: center;
 			padding: 0 !important;
+			border-radius: 50%;
+			background-color: $teal;
+			color: #fff;
 			i {
 				display: inline-block;
 			}
@@ -117,8 +134,8 @@
 		}
 		.icon-actions {
 			position: absolute;
-			right: 10px;
-			top: 0;;
+			right: 0;
+			top: 0;
 		}
 	}
 	@media (min-width:968px) {
@@ -180,7 +197,7 @@
 	&.assigned {
 		background-color: $blue;
 	}
-	&.in-progess {
+	&.in-progress {
 		background-color: $red;
 	}
 	&.review {

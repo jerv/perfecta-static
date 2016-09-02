@@ -387,20 +387,58 @@ table {
 .actions-dropdown {
   min-width: 420px;
   padding: 0; }
-  /* line 41, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
-  .actions-dropdown li {
-    border-bottom: 1px solid #eee; }
-    /* line 43, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
-    .actions-dropdown li:last-of-type {
-      border-bottom: none; }
-  /* line 47, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  /* line 43, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  .actions-dropdown li:first-of-type a {
+    padding: 10px 10px 9px 10px; }
+  /* line 48, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+  .actions-dropdown li:last-of-type a {
+    border-bottom: none; }
+  /* line 53, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
   .actions-dropdown a {
     color: #333;
     display: block;
-    padding: 8px 10px; }
-    /* line 51, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+    padding: 10px;
+    border-top: 1px solid #eee;
+    font-size: 12px; }
+    /* line 59, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+    .actions-dropdown a i {
+      font-size: 12px;
+      line-height: 1; }
+    /* line 63, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
     .actions-dropdown a:hover {
-      color: #4D9DE0; }
+      background-color: #f6f6f6; }
+    /* line 66, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+    .actions-dropdown a.clear-link {
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.2s ease-out;
+      color: #4D9DE0;
+      height: 45px; }
+      /* line 72, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+      .actions-dropdown a.clear-link i {
+        font-size: 14px; }
+      /* line 75, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+      .actions-dropdown a.clear-link:hover {
+        padding: 10px 10px 9px 15px; }
+    /* line 79, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+    .actions-dropdown a.view-link {
+      background-color: #2EC4B6;
+      font-weight: bold;
+      border: none;
+      font-size: 14px;
+      transition: all 0.2s ease-out;
+      color: #fff;
+      height: 45px; }
+      /* line 87, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+      .actions-dropdown a.view-link i {
+        font-size: 14px; }
+      /* line 90, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+      .actions-dropdown a.view-link:hover {
+        color: #fff;
+        padding: 10px 10px 10px 15px; }
+    /* line 95, /home/jerv/work/profecta/source/stylesheets/modules/_mdl-overrides.scss */
+    .actions-dropdown a .u-blue {
+      font-weight: bold; }
 
 /* line 10, /home/jerv/work/profecta/source/stylesheets/modules/_spacing.scss */
 [class|="margin"] {
@@ -1234,32 +1272,33 @@ nav {
         padding: 0;
         text-align: center;
         height: 45px;
-        box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset; }
-        /* line 317, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        box-shadow: 0 -1px rgba(0, 0, 0, 0.1) inset, -1px 0 rgba(0, 0, 0, 0.1) inset;
+        margin-top: 0; }
+        /* line 318, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .list-items > li .projects-link i {
           color: #fff;
           font-size: 12px; }
-        /* line 321, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 322, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .list-items > li .projects-link span {
           display: none; }
-      /* line 325, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+      /* line 326, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
       .m-subnav .list-items > li a {
         height: 45px; }
-        /* line 327, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 328, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .list-items > li a i {
           display: inline-block;
           font-size: 21px; }
-        /* line 331, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+        /* line 332, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
         .m-subnav .list-items > li a span {
           display: none; }
-  /* line 337, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 338, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .assigned-users {
     display: none; } }
 @media (max-width: 768px) {
-  /* line 345, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+  /* line 346, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
   .m-subnav .list-items {
     font-size: 10px; }
-    /* line 348, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
+    /* line 349, /home/jerv/work/profecta/source/stylesheets/modules/_header.scss */
     .m-subnav .list-items li a {
       white-space: nowrap; } }
 /* line 2, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
@@ -1283,9 +1322,9 @@ nav {
 .m-toolbar .icon-actions {
   display: inline-block; }
   /* line 21, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
-  .m-toolbar .icon-actions a {
+  .m-toolbar .icon-actions button {
     padding: 0;
-    min-width: 0; }
+    width: 38px; }
 /* line 26, /home/jerv/work/profecta/source/stylesheets/layouts/_kan-ban.scss */
 .m-toolbar .icon-link {
   color: #bbb;

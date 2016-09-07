@@ -1,0 +1,332 @@
+.action-popup {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	background-color: rgba(0,0,0,0.6);
+	.action-popup-container {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 15px 0;
+		.container {
+			max-width: 1200px;	
+		}
+	}
+	.popup-body {
+		display: block;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	}
+	.black-heading {
+		background-color: #1E1B36;
+		color: #fff;
+		border-radius: 5px 5px 0 0;
+		height: 45px;
+		position: relative;
+		.heading-logo {
+			display: inline-block;
+			width: 24px;
+			float: left;
+			margin: 13px 10px;
+		}
+		.action-number {
+			display: inline-block;
+			font-weight: 300;
+			font-size: 24px;
+			margin: 0;
+			line-height: 45px;
+			margin-left: 5px;
+			float: left;
+		}
+		.action-name {
+			width: 100%;
+			max-width: 460px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 45px;
+			display: inline-block;
+			margin: 0 10px;
+			font-size: 18px;
+			font-weight: bold;
+			float: left;
+		}
+		.action-status {
+			color: #333;
+			background-color: #eee;
+			border-radius: 3px;
+			font-size: 16px;
+			display: inline-block;
+			float: left;
+			line-height: 1;
+			padding: 5px 12px;
+			margin: 10px 0;
+			&.assigned {
+				background-color: $blue;
+				color: #fff;
+			}
+		}
+		.action-user {
+			display: inline-block;
+			float: left;
+			height: 45px;
+			margin:0 15px;
+			img {
+				width: 20%;
+				border-radius: 50%;
+				direction: inline-block;
+				float: left;
+				margin-top: 8px;
+			}
+			.text {
+				display: inline-block;
+				width: 80%;
+				float: left;
+				padding-left: 8px;
+			}
+			.name {
+				display: block;
+				font-size: 12px;
+				line-height: 1;
+				margin: 8px 0 5px 0;
+			}
+			.role {
+				font-weight: bold;
+				display: block;
+				font-size: 10px;
+				line-height: 1;
+			}
+		}
+		.options {
+			float: right;
+			display: inline-block;
+			margin-right: 45px;
+			i {
+				font-size: 22px;
+			}
+			a {
+				min-width: 0;
+				display: inline-block;
+				float: right;
+				color: rgba(250,250,250,0.6);
+				height: 45px;
+				width: 45px;
+				text-align: center;
+				line-height: 45px;
+				transition: all 0.2s ease-out;
+				padding: 0;
+				&:hover {
+					color: rgba(250,250,250,0.9);
+				}
+			}
+		}
+		.close-button {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 45px;
+			width: 45px;
+			text-align: center;
+			line-height: 45px;
+			display: inline-block;
+			color: rgba(250,250,250,0.6);
+			transition: all 0.2s ease-out;
+			font-size: 22px;
+			min-width: 0;
+			padding: 0;
+			border-left: 1px solid rgba(250,250,250,0.2);
+			&:hover {
+				color: rgba(250,250,250,0.9);
+			}
+		}
+	}
+	.main-content {
+		overflow-y: scroll;
+		max-height: 80vh;
+		width: 100%;
+	}
+	.primary-column {
+		display: block;
+		width: 100%;
+		padding: 15px;
+		@media (min-width: 768px) {
+			width: 70%;
+			float: left;
+			display: inline-block;
+			padding: 12px 25px;
+		}
+		.due-date {
+			margin: 0;
+			line-height: 45px;
+			@media (min-width: 768px) {
+				display: inline-block;
+				float: left;
+				width: 66%;
+			}
+		}
+		.priority {
+			margin: 0;
+			font-size: 16px;
+			color: #bbb;
+			font-weight: 600;
+			line-height: 45px;
+			@media (min-width: 768px) {
+				text-align: right;
+				display: inline-block;
+				float: right;
+				width: 33%;
+			}
+		}
+		.epic-link {
+			color: $blue;
+			text-decoration: underline;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 1.4;
+			&:hover {
+				color: $blue;
+			}
+		}
+		.reviewer-effort {
+			margin: 15px 0 0 0;
+			p {
+				margin: 0;
+				display: inline-block;
+				float: left;
+				width: 50%;
+				text-align: center;
+				&.empty {
+					color: #bbb;
+				}
+				&.high {
+					color: $red;
+				}
+				&.medium {
+					color: $orange;
+				}
+				&.low {
+					color: $dark-blue;
+				}
+				span {
+					font-weight: 600;
+				}
+			}
+			@media (min-width: 768px) {
+				p {
+					width: 25%;
+					text-align: left;
+				}
+			}
+		}
+		.content-heading {
+			margin: 15px 0 0 0;
+			color: #777;
+			p {
+				margin: 0;
+				display: inline-block;
+				float: left;
+				width: 50%;
+				text-align: left;
+				span {
+					font-weight: 800;
+				}
+			}
+			p:last-of-type {
+				text-align: right;
+			}
+		}
+		.content-body {
+			line-height: 1.4;
+			font-size: 16px;
+			margin: 10px 0;
+		}
+		.normal-list {
+			list-style-type: dot;
+		}
+	}
+
+	.side-column {
+		display: block;
+		width: 100%;
+		@media (min-width: 768px) {
+			width: 30%;
+			float: left;
+			display: inline-block;
+			border-left: 1px solid #eee;
+		}
+	}
+
+	.annotation {
+		background-color: #FAF8D3;
+		padding: 0 3px;
+	}
+
+	.checklist-title {
+		& > span {
+			font-weight: bold;
+			color: $blue;
+		}
+		i {
+			color: #bbb;
+		}
+	}
+
+	.checklist-list {
+		list-style-type: none;
+		margin: 15px 0;
+		padding: 0;
+		border:1px solid #ddd;
+		& > li {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid #ddd;
+			height: 45px;
+			position: relative;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			span.text {
+				display: inline-block;
+				float: left;
+				margin: 0 12px;
+				line-height: 45px;
+			}
+		}
+		.mdl-checkbox {
+			display: block;
+			width: 100%;
+			cursor: pointer;
+			line-height: 45px;
+			padding-left: 50px;
+			height: 45px;
+		}
+		.mdl-checkbox__ripple-container {
+			top: 4px;
+			left: 7px;
+		}
+		.mdl-checkbox__box-outline, .mdl-checkbox__focus-helper {
+			top: 14px;
+			left: 17px;
+		}
+		.mdl-checkbox__input[checked] + .mdl-checkbox__label {
+			color: #999;
+			text-decoration: line-through;
+		}
+		.contextual {
+			position: absolute;
+			top: 7px;
+			z-index: 2;
+			right: 5px;
+			color: #777;
+		}
+		.mdl-menu__item {
+			line-height: 30px;
+			height: 30px;
+		}
+	}
+}
+

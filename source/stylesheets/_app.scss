@@ -94,6 +94,14 @@ a {
 	position: relative;
 }
 
+.u-line-divider {
+	display: block;
+	margin: 12px 0;
+	height: 1px;
+	width: 100%;
+	background-color: #ddd;
+}
+
 .group:after {
 	visibility: hidden;
 	display: block;

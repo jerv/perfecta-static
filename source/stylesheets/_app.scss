@@ -6,6 +6,7 @@ $red: #DD614A;
 $yellow: #F3DE8A;
 $green: #60D394;
 $orange: #FF9F00;
+$purple: #7834B4;
 
 @import 'vendor/0-dir';
 @import 'modules/0-dir';
@@ -32,9 +33,11 @@ img {
 
 a {
 	text-decoration: none;
+	color: $blue;
 	&:hover, &:active, &:focus {
 		text-decoration: none;
 		outline: none;
+		color: darken($blue, 15%);
 	}
 	&.white-link {
 		color: #fff;

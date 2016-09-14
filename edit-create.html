@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Title of Action | Profecta</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue-amber.min.css" /> 
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link href="stylesheets/all.css" rel="stylesheet" />
+
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="edit-create">
+
+    <div class="action-popup">
+	<div class="action-popup-container">
+		<div class="container">
+			<article class="popup-body">
+				<section class="black-heading">
+					<div class="group">
+						<img class="heading-logo" src="images/action-icon.png">
+						<h5 class="action-number">#27</h5>
+				    <input class="action-name-input" placeholder="Name this Action" type="text">
+						<button id="assignedTo" class="action-status assigned mdl-button mdl-js-button mdl-js-ripple-effect">
+							Assigned <i class="icon-down-open-mini"></i>
+						</button>
+						<ul class="mdl-small-list mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+						    for="assignedTo">
+						  <li class="mdl-menu__item">In Progress</li>
+						  <li class="mdl-menu__item">Under Review</li>
+						  <li class="mdl-menu__item">Complete</li>
+						</ul>
+						<section class="action-user">
+							<div class="group">
+								<img src="images/empty-profile.png">
+								<div class="text">
+									<span class="name">N/A</span>
+									<a href="" class="role">Assign User</a>
+								</div>
+							</div>
+						</section>
+						<div class="options">
+							<a href="" class="save-button mdl-button mdl-js-button mdl-js-ripple-effect">
+								Save
+							</a>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-comment"></i></a>
+							<a href="" class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-cog"></i></a>
+						</div>
+						<a href="" class="close-button mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-cancel"></i></a>
+					</div>
+				</section>
+				<div class="flex-container">
+					<section class="primary-column">
+						<div class="row-height">
+							<div class="group">
+								<h5 class="due-date">Due:
+								<button class="contextual mdl-button mdl-button--raised mdl-js-button  mdl-js-ripple-effect">
+									Select Due Date
+								</button>
+								</h5>
+								<h5 class="priority">
+									<button class="contextual mdl-button mdl-button--raised mdl-js-button  mdl-js-ripple-effect">
+										Select Priority Level <i class="icon-down-open"></i>
+									</button>
+								</h5>
+							</div>
+							<a href="" class="add-epic-link">Add User Story</a>
+							<div class="reviewer-effort group">
+								<p class="empty">Reviewer: <span>N/A</span></p> <!-- use .empty when empty -->
+								<p class="empty">Effort: <span>N/A</span></p> <!-- use .empty when empty -->
+							</div>
+							<div class="u-line-divider"></div>
+							<div class="content-heading group">
+								<p>Describe Your Action:</p>
+							</div>
+							<img class="example-editor" src="images/example-editor.png">
+							<h5 class="checklist-title empty"><i class="icon-menu"></i> Checklist Name</h5>
+							<ul class="checklist-list empty">
+								<li class="empty">
+									<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+									  <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" disabled>
+									  <input type="text" placeholder="Add tasks in a list. Press enter for new item.">
+									</label>
+								</li>
+							</ul>
+							<a href="">Add New Checklist Item</a>
+							<div class="created-date">Created on Aug 8th 2016 PST by <span>John Doe</span></div>
+						</div>
+					</section>
+					<section class="side-column">
+						<div class="row-height">
+							<h5 class="collapse-heading">
+								Attachments
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-plus"></i></button>
+							</h5>
+							<h5 class="side-heading">Multimedia Files</h5>
+							<form class="file-uploader">
+								<div class="foreground">
+									<i class="icon-attach"></i>
+									<p>
+										Upload images or visual assets and link it in the card description to keep things organized
+									</p>
+								</div>
+								<div class="file-uploader-body"></div>
+								<input type="file">
+							</form>
+							<h5 class="collapse-heading">
+								Sub Actions
+								<button class="mdl-button mdl-js-button mdl-js-ripple-effect"><i class="icon-plus"></i></button>
+							</h5>
+							<a href="" class="new-sub-action">
+								<span>Add a Sub Action</span>, assign it to yourself or others, track it here.
+							</a>
+						</div>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
+  </body>
+</html>

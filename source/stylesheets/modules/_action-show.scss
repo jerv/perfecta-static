@@ -56,6 +56,37 @@
 			font-weight: bold;
 			float: left;
 		}
+		.action-name-input {
+			float: left;
+			display: inline-block;
+			color: #fff;
+			height: 26px;
+			line-height: 26px;
+			background-color: rgba(250,250,250,0.1);
+			outline: none;
+			margin: 10px;
+			padding: 0 5px;
+			width: 100%;
+			max-width: 460px;
+			border: 1px dashed rgba(250,250,250,0.7);
+			border-radius: 3px;
+			&:focus {
+				-webkit-appearance: none;
+				outline: none;
+			}
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: rgba(250,250,250,0.6);
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: rgba(250,250,250,0.6);
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: rgba(250,250,250,0.6);
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: rgba(250,250,250,0.6);
+			}
+		}
 		.action-status {
 			color: #333;
 			background-color: #eee;
@@ -64,8 +95,11 @@
 			display: inline-block;
 			float: left;
 			line-height: 1;
-			padding: 5px 12px;
+			padding: 5px 0 5px 8px;
 			margin: 10px 0;
+			min-width: 0;
+			height: auto;
+			font-weight: normal;
 			&.assigned {
 				background-color: $blue;
 				color: #fff;
@@ -77,7 +111,8 @@
 			height: 45px;
 			margin:0 15px;
 			img {
-				width: 20%;
+				width: 30px;
+				min-height: 30px;
 				border-radius: 50%;
 				display: inline-block;
 				float: left;
@@ -85,7 +120,6 @@
 			}
 			.text {
 				display: inline-block;
-				width: 80%;
 				float: left;
 				padding-left: 8px;
 			}
@@ -96,7 +130,7 @@
 				overflow: hidden;
 				white-space: nowrap;
 				text-overflow: ellipsis; 
-				margin: 8px 0 5px 0;
+				margin: 9px 0 5px 0;
 			}
 			.role {
 				font-weight: bold;
@@ -123,6 +157,20 @@
 				line-height: 45px;
 				transition: all 0.2s ease-out;
 				padding: 0;
+				&.save-button {
+					color: #fff;
+					background-color: $teal;
+					border-radius: 3px;
+					font-size: 16px;
+					display: inline-block;
+					line-height: 1;
+					padding: 5px 12px;
+					margin: 10px; 
+					min-width: 0;
+					height: auto;
+					font-weight: bold;
+					width: auto;
+				}
 				&:hover {
 					color: rgba(250,250,250,0.9);
 				}
@@ -201,6 +249,20 @@
 					width: 28px;
 				}
 			}
+			.action-name-input {
+				width: 50%;
+				box-sizing: border-box;
+				margin:7px 0 7px 45px;
+				display: block;
+				max-width: 100%;
+			}
+			.options {
+				a {
+					&.save-button {
+						margin: 10px 5px; 
+					}
+				}
+			}
 		}
 	}
 	.flex-container {
@@ -214,6 +276,9 @@
     width: 100%;
     max-width: 100%;
 	}
+	.row-height {
+		width: 100%;
+	}
 	.primary-column {
 		display: block;
 		width: 100%;
@@ -226,6 +291,8 @@
 		}
 		.due-date {
 			margin: 0;
+			width: 50%;
+			float: left;
 			line-height: 45px;
 			@media (min-width: 768px) {
 				display: inline-block;
@@ -239,8 +306,22 @@
 			color: #bbb;
 			font-weight: 600;
 			line-height: 45px;
+			float: left;
+			text-align: right;
+			width: 50%;
+			.low, .medium, .high {
+				font-weight: bold;
+			}
+			.low {
+				color: $blue;
+			}
+			.medium {
+				color: $orange;
+			}
+			.high {
+				color: $red;
+			}
 			@media (min-width: 768px) {
-				text-align: right;
 				display: inline-block;
 				float: right;
 				width: 33%;
@@ -252,6 +333,17 @@
 			font-weight: 600;
 			font-size: 16px;
 			line-height: 1.4;
+			&:hover {
+				color: $blue;
+			}
+		}
+		.add-epic-link {
+			color: #999;
+			display: inline-block;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 1.4;
+			margin-top: 15px;
 			&:hover {
 				color: $blue;
 			}
@@ -300,7 +392,7 @@
 					font-weight: 800;
 				}
 			}
-			p:last-of-type {
+			.updated {
 				text-align: right;
 			}
 		}
@@ -308,6 +400,26 @@
 			line-height: 1.4;
 			font-size: 16px;
 			margin: 10px 0;
+			span.linked-text {
+				color: $purple;
+				text-decoration: underline;
+				cursor: pointer;
+				.linked-number {
+					border-radius: 50%;
+					background-color: $purple;
+					color: #fff;
+					font-weight: bold;
+					text-align: center;
+					line-height: 16px;
+					width: 16px;
+					margin-right: 3px;
+					display: inline-block;
+				}
+			}
+		}
+		.example-editor {
+			width: 100%;
+			margin: 12px 0;
 		}
 		.normal-list {
 			list-style-type: dot;
@@ -493,6 +605,9 @@
 		i {
 			color: #bbb;
 		}
+		&.empty {
+			color: #999;
+		}
 	}
 
 	.checklist-list {
@@ -500,6 +615,12 @@
 		margin: 15px 0;
 		padding: 0;
 		border:1px solid #ddd;
+		&.empty {
+			border: none;
+			& > li {
+				border: none;
+			}
+		}
 		& > li {
 			margin: 0;
 			padding: 0;
@@ -514,6 +635,21 @@
 				float: left;
 				margin: 0 12px;
 				line-height: 45px;
+			}
+		}
+		input[type="text"] {
+			padding: 0 10px 0 50px;
+			width: 100%;
+			position: absolute;
+			line-height: 45px;
+			height: 45px;
+			border: 2px dashed #ddd;
+			top: 0;
+			left: 0;
+			&:focus {
+				outline: none;
+				-webkit-appearance: none;
+				border-color: $blue;
 			}
 		}
 		.mdl-checkbox {
@@ -558,6 +694,25 @@
 		.mdl-menu__item {
 			line-height: 30px;
 			height: 30px;
+		}
+	}
+	.new-sub-action {
+		display: block;
+		margin: 15px 0;
+		border:2px dashed #ddd;
+		padding: 12px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 100%;
+		color: #777;
+		text-align: center;
+		transition: all 0.2s ease-out;
+		span {
+			color: $blue;
+		}
+		&:hover {
+			border-color: $blue;
+			color: $blue;
 		}
 	}
 	.sub-action-card {
@@ -658,9 +813,11 @@
 			padding: 0;
 		}
 		.primary-column .due-date {
-			font-size: 12px;
-			font-weight: bold;
-			line-height: 28px;
+			width: 100%;
+		}
+		.primary-column .priority {
+			width: 100%;
+			text-align: left;
 		}
 	}
 }

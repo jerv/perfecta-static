@@ -31,6 +31,13 @@
 	padding: 0;
 }
 
+.mdl-small-list {
+	.mdl-menu__item {
+		height: 32px;
+		line-height: 32px;
+	}
+}
+
 .mdl-with-content {
 	padding: 10px;
 }

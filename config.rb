@@ -58,6 +58,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 page "/show.html", :layout => "nonav"
+page "/edit-create.html", :layout => "nonav"
 
 # Build-specific configuration
 configure :build do

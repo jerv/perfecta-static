@@ -11,9 +11,15 @@ title: Title of Action | Profecta
 						<img class="heading-logo" src="images/action-icon.png">
 						<h5 class="action-number">#15</h5>
 						<h2 class="action-name">Action Name goes here and gets cut off if its really long</h2>
-						<div class="action-status assigned">
-							Assigned
-						</div>
+						<button id="assignedTo" class="action-status assigned mdl-button mdl-js-button">
+							Assigned <i class="icon-down-open-mini"></i>
+						</button>
+						<ul class="mdl-small-list mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+						    for="assignedTo">
+						  <li class="mdl-menu__item">In Progress</li>
+						  <li class="mdl-menu__item">Under Review</li>
+						  <li class="mdl-menu__item">Complete</li>
+						</ul>
 						<section class="action-user">
 							<div class="group">
 								<img src="images/example.jpg">
@@ -45,12 +51,12 @@ title: Title of Action | Profecta
 							</div>
 							<div class="u-line-divider"></div>
 							<div class="content-heading group">
-								<p>Describe Your Action:</p> <!-- use .empty when empty -->
-								<p>Last updated today 8:00PM (PST) by <span>me</span></p> <!-- use .empty when empty -->
+								<p>Describe Your Action:</p>
+								<p class="updated">Last updated today 8:00PM (PST) by <span>me</span></p>
 							</div>
 							<div class="content-body">
 								<p>
-									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae <strong>vitae dicta sunt explicabo</strong>. Nemo enim ipsam voluptatem quia
+									Sed ut perspiciatis unde <span class="linked-text"><span class="linked-number">1</span>iste natus error sit voluptatem accusantium doloremque</span> laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae <strong>vitae dicta sunt explicabo</strong>. Nemo enim ipsam voluptatem quia
 								</p>
 								<p>
 									voluptas sit aspernatur <span class="annotation">aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione</span> voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
